@@ -1,0 +1,354 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+API Regression Test,,,,19-07-2024 10:20:46,19-07-2024 10:22:58,2m - 11.898s,FAILED
+,,,,,,,
+Test Cases/API/Medicines/PUT_Verify request update medicine successfully,,,"fast-test,api,p2",19-07-2024 10:20:46,19-07-2024 10:20:58,12.629s,PASSED
+Start listener action : before,,,,19-07-2024 10:20:46,19-07-2024 10:20:47,0.678s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:20:47,19-07-2024 10:20:47,0.030s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:20:47,19-07-2024 10:20:47,0.014s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Get account to login,,19-07-2024 10:20:47,19-07-2024 10:20:47,0.156s,PASSED
+"doctorToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:20:47,19-07-2024 10:20:51,4.265s,PASSED
+accountData = data,,,,19-07-2024 10:20:51,19-07-2024 10:20:52,1.127s,PASSED
+accountId = id,,,,19-07-2024 10:20:52,19-07-2024 10:20:52,0.002s,PASSED
+accountName = fullName,,,,19-07-2024 10:20:52,19-07-2024 10:20:52,0.003s,PASSED
+accountRole = role,,,,19-07-2024 10:20:52,19-07-2024 10:20:52,0.004s,PASSED
+"medicineId = getAllMedicines(doctorToken).getRandomMedicine()[""medicineUUID""]",,Get medicine id,,19-07-2024 10:20:52,19-07-2024 10:20:54,1.395s,PASSED
+medicineInfo = MedicineUtil).generateRandomInformationForUpdate(),,Generate random inforamtion,,19-07-2024 10:20:54,19-07-2024 10:20:54,0.045s,PASSED
+payLoad = APIUtil).constructPayLoadFromMap(medicineInfo),,,,19-07-2024 10:20:54,19-07-2024 10:20:54,0.029s,PASSED
+"response = initRequestObject().requestUpdateMedicine(doctorToken, medicineId, payLoad)",,Call the api,,19-07-2024 10:20:54,19-07-2024 10:20:55,1.160s,PASSED
+apiMedicine = request,,Verify correct response,,19-07-2024 10:20:55,19-07-2024 10:20:55,0.003s,PASSED
+"accountName"", accountName).verifyPropertyValue(""data.accountRole"", accountRole)",,,,19-07-2024 10:20:55,19-07-2024 10:20:55,0.215s,PASSED
+"user = withRole(""Admin"").getFirst()",,Reject the request so that it does not appear on UI,,19-07-2024 10:20:55,19-07-2024 10:20:55,0.007s,PASSED
+requestId = id,,,,19-07-2024 10:20:55,19-07-2024 10:20:55,0.002s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:20:55,19-07-2024 10:20:57,1.550s,PASSED
+"rejectRequest(adminToken, requestId).verifyStatusCode(200)",,,,19-07-2024 10:20:57,19-07-2024 10:20:58,1.395s,PASSED
+Start listener action : after,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.005s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.232s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.004s,PASSED
+,,,,,,,
+Test Cases/API/Medicines/POST_Verify admin can create and delete medicine,,,"fast-test,api,p1",19-07-2024 10:20:58,19-07-2024 10:21:04,5.637s,PASSED
+Start listener action : before,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.003s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.001s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:20:58,19-07-2024 10:20:58,0.002s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to login,,19-07-2024 10:20:59,19-07-2024 10:20:59,0.004s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:20:59,19-07-2024 10:21:00,1.483s,PASSED
+medicineInfo = MedicineUtil).generateRandomMedicineInformation(),,Generate random medicine information to put in the api,,19-07-2024 10:21:00,19-07-2024 10:21:00,0.151s,PASSED
+payLoad = APIUtil).constructPayLoadFromMap(medicineInfo),,Call CREATE api,,19-07-2024 10:21:00,19-07-2024 10:21:00,0.009s,PASSED
+"responseCreate = initRequestObject().createMedicine(adminToken, payLoad)",,,,19-07-2024 10:21:00,19-07-2024 10:21:01,1.098s,PASSED
+apiMedicineCreate = data,,Verify the response,,19-07-2024 10:21:01,19-07-2024 10:21:01,0.004s,PASSED
+"verifyPropertyValue(""message"", ""Create medicine successfully"").verifyCorrectMedicine(apiMedicineCreate, medicineInfo)",,,,19-07-2024 10:21:01,19-07-2024 10:21:01,0.066s,PASSED
+"medicineId = responseCreate.getPropertyValue(""data.id"")",,Verify getting medicine details successfully,,19-07-2024 10:21:01,19-07-2024 10:21:01,0.043s,PASSED
+"responseGet = initRequestObject().getMedicineDetails(adminToken, medicineId)",,,,19-07-2024 10:21:01,19-07-2024 10:21:03,1.131s,PASSED
+apiMedicineGet = responseGet.parseResponseBodyToJsonObject(),,,,19-07-2024 10:21:03,19-07-2024 10:21:03,0.002s,PASSED
+"responseGet.verifyCorrectMedicine(apiMedicineGet, medicineInfo)",,,,19-07-2024 10:21:03,19-07-2024 10:21:03,0.026s,PASSED
+"deleteMedicine(adminToken, medicineId).verifyStatusCode(204)",,Verify delete medicine,,19-07-2024 10:21:03,19-07-2024 10:21:04,1.504s,PASSED
+Start listener action : after,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.002s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.014s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Appointment/POST_Verify book appointment successfully,,,"fast-test,api,p2",19-07-2024 10:21:04,19-07-2024 10:21:51,47.372s,PASSED
+Start listener action : before,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+timeSlotList = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+doctorList = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+timeSlotId = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+doctorId = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.002s,PASSED
+dateInTheFuture = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.002s,PASSED
+specialityId = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+"specialtyName = ""Dermatology""",,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+"note = ""This is note""",,,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.001s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to login,,19-07-2024 10:21:04,19-07-2024 10:21:04,0.008s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:21:04,19-07-2024 10:21:05,1.215s,PASSED
+specialityId = id,,Use API to get specialty by name,,19-07-2024 10:21:05,19-07-2024 10:21:09,3.832s,PASSED
+"activateSpecialty(adminAccessToken, specialityId).verifyStatusCode(200)",,"Activate specialty ""Dermatology""",,19-07-2024 10:21:09,19-07-2024 10:21:11,1.329s,PASSED
+"user = withRole(""Patient"").getFirst()",,Log in as patient,,19-07-2024 10:21:11,19-07-2024 10:21:11,0.007s,PASSED
+"patientAccessToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:21:11,19-07-2024 10:21:12,1.465s,PASSED
+while (true),,Find available doctor,,19-07-2024 10:21:12,19-07-2024 10:21:46,33.526s,PASSED
+doctorList = data,,Get list of available doctors by time-slot and speciality,,19-07-2024 10:21:46,19-07-2024 10:21:47,1.120s,PASSED
+doctorId = id,,,,19-07-2024 10:21:47,19-07-2024 10:21:47,0.003s,PASSED
+"verifyStatusCode(200).verifyPropertyValue(""message"", ""Book appointment successfully"")",,Book appointment,,19-07-2024 10:21:47,19-07-2024 10:21:48,1.386s,PASSED
+"deactivateSpecialty(adminAccessToken, specialityId).verifyStatusCode(200)",,"Deactivate specialty ""Dermatology""",,19-07-2024 10:21:48,19-07-2024 10:21:51,3.323s,PASSED
+Start listener action : after,,,,19-07-2024 10:21:51,19-07-2024 10:21:51,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:21:51,19-07-2024 10:21:51,0.009s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:21:51,19-07-2024 10:21:51,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Management/PUT_Verify update doctor profile successfully,,,"fast-test,api,p2",19-07-2024 10:21:51,19-07-2024 10:21:59,7.834s,PASSED
+Start listener action : before,,,,19-07-2024 10:21:52,19-07-2024 10:21:52,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:21:52,19-07-2024 10:21:52,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:21:52,19-07-2024 10:21:52,0.001s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to log in,,19-07-2024 10:21:52,19-07-2024 10:21:52,0.004s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:21:52,19-07-2024 10:21:53,1.430s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,Generate random information to create doctor,,19-07-2024 10:21:53,19-07-2024 10:21:53,0.010s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:21:53,19-07-2024 10:21:53,0.003s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:21:53,19-07-2024 10:21:53,0.004s,PASSED
+"password = ""P@ssw0rd@auto""",,,,19-07-2024 10:21:53,19-07-2024 10:21:53,0.001s,PASSED
+doctorUuid = id,,Create a new doctor to not affect other tc and get doctor uuid,,19-07-2024 10:21:53,19-07-2024 10:21:55,2.348s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,Generate random information,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.002s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),,,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.004s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),,,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.003s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),,,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.004s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.001s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),,,,19-07-2024 10:21:55,19-07-2024 10:21:55,0.004s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),,,,19-07-2024 10:21:55,19-07-2024 10:21:57,1.282s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),,,,19-07-2024 10:21:57,19-07-2024 10:21:57,0.002s,PASSED
+"degree"", degree).hasProperty(""data.id"")",,,,19-07-2024 10:21:57,19-07-2024 10:21:58,1.507s,PASSED
+Start tear down : tearDown,,,,19-07-2024 10:21:58,19-07-2024 10:21:59,1.114s,PASSED
+Start listener action : after,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.002s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.009s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Management/GET_Verify get all doctors successfully,,,"fast-test,api,p1",19-07-2024 10:21:59,19-07-2024 10:22:02,3.045s,PASSED
+Start listener action : before,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.001s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.001s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to login,,19-07-2024 10:21:59,19-07-2024 10:21:59,0.003s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:21:59,19-07-2024 10:22:01,1.489s,PASSED
+"response = verifyPropertyValue(""message"", ""Get doctors successfully"").validateJsonAgainstSchema(schema)",,Get api response,,19-07-2024 10:22:01,19-07-2024 10:22:02,1.442s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.005s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Management/POST_Verify create doctor successfully,,,"fast-test,api,p2",19-07-2024 10:22:02,19-07-2024 10:22:06,3.544s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.001s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to login,,19-07-2024 10:22:02,19-07-2024 10:22:02,0.004s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:22:02,19-07-2024 10:22:04,1.241s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,,,19-07-2024 10:22:04,19-07-2024 10:22:04,0.002s,PASSED
+name = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:04,19-07-2024 10:22:04,0.003s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:04,19-07-2024 10:22:04,0.002s,PASSED
+"password = ""P@ssw0rdAuto""",,,,19-07-2024 10:22:04,19-07-2024 10:22:04,0.001s,PASSED
+"activated"", false).hasProperty(""data.id"")",,,,19-07-2024 10:22:04,19-07-2024 10:22:06,2.237s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.005s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Management/PUT_Verify activate doctor successfully,,,"fast-test,api,p2",19-07-2024 10:22:06,19-07-2024 10:22:11,5.193s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.000s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to log in,,19-07-2024 10:22:06,19-07-2024 10:22:06,0.003s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:22:06,19-07-2024 10:22:08,1.535s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,Create doctor account and get id,,19-07-2024 10:22:08,19-07-2024 10:22:08,0.002s,PASSED
+name = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:08,19-07-2024 10:22:08,0.003s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:08,19-07-2024 10:22:08,0.002s,PASSED
+"password = ""P@ssw0rdAuto""",,,,19-07-2024 10:22:08,19-07-2024 10:22:08,0.002s,PASSED
+doctorId = id,,,,19-07-2024 10:22:08,19-07-2024 10:22:10,2.453s,PASSED
+"initRequestObject().activateDoctor(adminAccessToken, doctorId)",,Activate doctor account,,19-07-2024 10:22:10,19-07-2024 10:22:11,1.121s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.009s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Request Review/PUT_Verify approve request successfully,,,"fast-test,api,p1",19-07-2024 10:22:11,19-07-2024 10:22:22,10.860s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.001s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.001s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Get account to login,,19-07-2024 10:22:11,19-07-2024 10:22:11,0.003s,PASSED
+"doctorToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:22:11,19-07-2024 10:22:13,1.344s,PASSED
+"medicineId = getAllMedicines(doctorToken).getRandomMedicine()[""medicineUUID""]",,Create a request,,19-07-2024 10:22:13,19-07-2024 10:22:14,1.251s,PASSED
+medicineInfo = MedicineUtil).generateRandomInformationForUpdate(),,,,19-07-2024 10:22:14,19-07-2024 10:22:14,0.006s,PASSED
+payLoad = APIUtil).constructPayLoadFromMap(medicineInfo),,,,19-07-2024 10:22:14,19-07-2024 10:22:14,0.002s,PASSED
+requestId = id,,,,19-07-2024 10:22:14,19-07-2024 10:22:15,1.632s,PASSED
+"user = withRole(""Admin"").getFirst()",,Approve the request,,19-07-2024 10:22:15,19-07-2024 10:22:15,0.005s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:22:15,19-07-2024 10:22:17,1.292s,PASSED
+"verifyStatusCode(200).verifyPropertyValue(""message"", ""Review sent successfully"")",,,,19-07-2024 10:22:17,19-07-2024 10:22:18,1.496s,PASSED
+"getAllMedicineRequests(adminToken).verifyRequestStatus(requestId, ""APPROVED"")",,Verify the request status is approved and the medicine appears in medicine list,,19-07-2024 10:22:18,19-07-2024 10:22:19,1.142s,PASSED
+"response = initRequestObject().getMedicineDetails(adminToken, medicineId)",,,,19-07-2024 10:22:19,19-07-2024 10:22:21,1.385s,PASSED
+apiMedicine = response.parseResponseBodyToJsonObject(),,,,19-07-2024 10:22:21,19-07-2024 10:22:21,0.001s,PASSED
+"MedicinesService).verifyCorrectMedicine(apiMedicine, medicineInfo)",,,,19-07-2024 10:22:21,19-07-2024 10:22:21,0.010s,PASSED
+"initRequestObject().deleteMedicine(adminToken, medicineId)",,Delete the created medicine,,19-07-2024 10:22:21,19-07-2024 10:22:22,1.215s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.007s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Patient Management/GET_Verify get patient accounts list successfully,,,"fast-test,api,p1",19-07-2024 10:22:22,19-07-2024 10:22:25,2.719s,FAILED
+Start listener action : before,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.001s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.000s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to login,,19-07-2024 10:22:22,19-07-2024 10:22:22,0.003s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",,Sign in as admin and get token,,19-07-2024 10:22:22,19-07-2024 10:22:24,1.499s,PASSED
+"verifyStatusCode(200).validateJsonAgainstSchema(""
+										{
+										""$schema"": ""http://json-schema.org/draft-04/schema#"",
+										""type"": ""object"",
+										""properties"": {
+										  ""items"": {
+											""type"": ""array"",
+											""items"": [
+											  {
+												""type"": ""object"",
+												""properties"": {
+												  ""id"": {
+													""type"": ""string""
+												  },
+												  ""fullName"": {
+													""type"": ""string""
+												  },
+												  ""address"": {
+													""type"": ""string""
+												  },
+												  ""email"": {
+													""type"": ""string""
+												  },
+												  ""birthday"": {
+													""type"": ""string""
+												  },
+												  ""phoneNumber"": {
+													""type"": ""string""
+												  },
+												  ""gender"": {
+													""type"": ""string""
+												  },
+												  ""weight"": {
+													""type"": ""integer""
+												  },
+												  ""height"": {
+													""type"": ""integer""
+												  },
+												  ""activated"": {
+													""type"": ""boolean""
+												  }
+												},
+												""required"": [
+												  ""id"",
+												  ""fullName"",
+												  ""address"",
+												  ""email"",
+												  ""phoneNumber"",
+												  ""activated""
+												]
+											  }
+											]
+										  },
+										  ""pagination"": {
+											""type"": ""object"",
+											""properties"": {
+											  ""currentPage"": {
+												""type"": ""integer""
+											  },
+											  ""totalPages"": {
+												""type"": ""integer""
+											  },
+											  ""totalRecords"": {
+												""type"": ""integer""
+											  }
+											},
+											""required"": [
+											  ""currentPage"",
+											  ""totalPages"",
+											  ""totalRecords""
+											]
+										  }
+										},
+										""required"": [
+										  ""items"",
+										  ""pagination""
+										]
+									  }
+									}"")",,Verify get patient accounts list successfully,,19-07-2024 10:22:24,19-07-2024 10:22:25,1.151s,FAILED
+Start listener action : after,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.000s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.006s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.000s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Profile Draft/PUT_Verify review doctor profile draft successfully,,,"fast-test,api,p2",19-07-2024 10:22:25,19-07-2024 10:22:35,9.890s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.000s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.001s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.000s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to log in,,19-07-2024 10:22:25,19-07-2024 10:22:25,0.003s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:22:25,19-07-2024 10:22:26,1.672s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,Generate random information to create doctor,,19-07-2024 10:22:26,19-07-2024 10:22:26,0.001s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:26,19-07-2024 10:22:26,0.002s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:26,19-07-2024 10:22:26,0.001s,PASSED
+"password = ""P@ssw0rd@auto""",,,,19-07-2024 10:22:26,19-07-2024 10:22:26,0.001s,PASSED
+"initRequestObject().createDoctor(adminToken, email, fullName, phoneNumber, password)",,Create a new doctor to not affect other tc,,19-07-2024 10:22:26,19-07-2024 10:22:29,2.390s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Log in as doctor to request change profile,,19-07-2024 10:22:29,19-07-2024 10:22:29,0.004s,PASSED
+"doctorToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:22:29,19-07-2024 10:22:30,1.456s,PASSED
+newFullName = RandomProfileGenerator).generateRandomName(),,Generate random information to update doctor profile,,19-07-2024 10:22:30,19-07-2024 10:22:30,0.002s,PASSED
+newPhoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:30,19-07-2024 10:22:30,0.002s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),,,,19-07-2024 10:22:30,19-07-2024 10:22:30,0.002s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),,,,19-07-2024 10:22:30,19-07-2024 10:22:30,0.001s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),,,,19-07-2024 10:22:30,19-07-2024 10:22:30,0.001s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),,,,19-07-2024 10:22:30,19-07-2024 10:22:32,1.295s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),,,,19-07-2024 10:22:32,19-07-2024 10:22:32,0.001s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),,,,19-07-2024 10:22:32,19-07-2024 10:22:32,0.002s,PASSED
+"photo = ""photoAuto""",,,,19-07-2024 10:22:32,19-07-2024 10:22:32,0.001s,PASSED
+doctorId = id,,Doctor request change profile and get doctor id,,19-07-2024 10:22:32,19-07-2024 10:22:33,1.564s,PASSED
+"verifyStatusCode(200).verifyPropertyValue(""message"", ""Review sent successfully"")",,Review (Approve or Reject),,19-07-2024 10:22:33,19-07-2024 10:22:35,1.423s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.000s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.012s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Profile Draft/PUT_Verify review doctor profile draft successfully,,,"fast-test,api,p2",19-07-2024 10:22:35,19-07-2024 10:22:43,8.781s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.001s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.001s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.000s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to log in,,19-07-2024 10:22:35,19-07-2024 10:22:35,0.004s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:22:35,19-07-2024 10:22:36,1.513s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,Generate random information to create doctor,,19-07-2024 10:22:36,19-07-2024 10:22:36,0.001s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:36,19-07-2024 10:22:36,0.001s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:36,19-07-2024 10:22:36,0.001s,PASSED
+"password = ""P@ssw0rd@auto""",,,,19-07-2024 10:22:36,19-07-2024 10:22:36,0.000s,PASSED
+"initRequestObject().createDoctor(adminToken, email, fullName, phoneNumber, password)",,Create a new doctor to not affect other tc,,19-07-2024 10:22:36,19-07-2024 10:22:38,2.118s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Log in as doctor to request change profile,,19-07-2024 10:22:38,19-07-2024 10:22:38,0.002s,PASSED
+"doctorToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:22:38,19-07-2024 10:22:40,1.251s,PASSED
+newFullName = RandomProfileGenerator).generateRandomName(),,Generate random information to update doctor profile,,19-07-2024 10:22:40,19-07-2024 10:22:40,0.001s,PASSED
+newPhoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:40,19-07-2024 10:22:40,0.001s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),,,,19-07-2024 10:22:40,19-07-2024 10:22:40,0.001s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),,,,19-07-2024 10:22:40,19-07-2024 10:22:40,0.001s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),,,,19-07-2024 10:22:40,19-07-2024 10:22:40,0.001s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),,,,19-07-2024 10:22:40,19-07-2024 10:22:41,1.363s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),,,,19-07-2024 10:22:41,19-07-2024 10:22:41,0.001s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),,,,19-07-2024 10:22:41,19-07-2024 10:22:41,0.001s,PASSED
+"photo = ""photoAuto""",,,,19-07-2024 10:22:41,19-07-2024 10:22:41,0.001s,PASSED
+doctorId = id,,Doctor request change profile and get doctor id,,19-07-2024 10:22:41,19-07-2024 10:22:42,1.244s,PASSED
+"verifyStatusCode(200).verifyPropertyValue(""message"", ""Review sent successfully"")",,Review (Approve or Reject),,19-07-2024 10:22:42,19-07-2024 10:22:43,1.246s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.000s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.005s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.001s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Profile Draft/GET_Verify get doctor draft profile by id successfully,,,"fast-test,api,p1",19-07-2024 10:22:43,19-07-2024 10:22:53,9.897s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.001s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.000s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.000s,PASSED
+"user = withRole(""Admin"").getFirst()",,Get account to log in,,19-07-2024 10:22:43,19-07-2024 10:22:43,0.003s,PASSED
+"adminToken = signIn(email, pwd).getAccessToken()",,Log in as admin,,19-07-2024 10:22:43,19-07-2024 10:22:45,1.573s,PASSED
+email = RandomProfileGenerator).generateRandomEmail(),,Generate random information to create doctor,,19-07-2024 10:22:45,19-07-2024 10:22:45,0.002s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:45,19-07-2024 10:22:45,0.001s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:45,19-07-2024 10:22:45,0.002s,PASSED
+"password = ""P@ssw0rd@auto""",,,,19-07-2024 10:22:45,19-07-2024 10:22:45,0.003s,PASSED
+"createDoctor(adminToken, email, fullName, phoneNumber, password).verifyStatusCode(200)",,Create a new doctor to not affect other tc,,19-07-2024 10:22:45,19-07-2024 10:22:47,1.970s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Log in as doctor to request change profile,,19-07-2024 10:22:47,19-07-2024 10:22:47,0.005s,PASSED
+"doctorToken = signIn(email, pwd).getAccessToken()",,,,19-07-2024 10:22:47,19-07-2024 10:22:48,1.259s,PASSED
+newFullName = RandomProfileGenerator).generateRandomName(),,Generate random information to update doctor profile,,19-07-2024 10:22:48,19-07-2024 10:22:48,0.001s,PASSED
+newPhoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:48,19-07-2024 10:22:48,0.001s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),,,,19-07-2024 10:22:48,19-07-2024 10:22:48,0.000s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),,,,19-07-2024 10:22:48,19-07-2024 10:22:48,0.001s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),,,,19-07-2024 10:22:48,19-07-2024 10:22:48,0.001s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),,,,19-07-2024 10:22:48,19-07-2024 10:22:49,1.150s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),,,,19-07-2024 10:22:49,19-07-2024 10:22:49,0.002s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),,,,19-07-2024 10:22:49,19-07-2024 10:22:49,0.002s,PASSED
+"photo = ""photoAuto""",,,,19-07-2024 10:22:49,19-07-2024 10:22:49,0.001s,PASSED
+doctorId = id,,Doctor request change profile and get doctor id,,19-07-2024 10:22:49,19-07-2024 10:22:51,1.293s,PASSED
+"description"", description).hasProperty(""data.activated"")",,Get draft change by doctor Id,,19-07-2024 10:22:51,19-07-2024 10:22:53,2.548s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.004s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.000s,PASSED
+,,,,,,,
+Test Cases/API/Doctor Profile/PUT_Verify update doctor profile successfully,,,"fast-test,api,p1",19-07-2024 10:22:53,19-07-2024 10:22:58,4.202s,PASSED
+Start listener action : before,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.002s,PASSED
+Start listener action : openApplication,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.001s,PASSED
+Start listener action : openBrowser,,,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.000s,PASSED
+"user = withRole(""Doctor"").getFirst()",,Get account to log in,,19-07-2024 10:22:53,19-07-2024 10:22:53,0.002s,PASSED
+"doctorAccessToken = signIn(email, pwd).getAccessToken()",,Log in as doctor,,19-07-2024 10:22:53,19-07-2024 10:22:55,1.522s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.001s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.001s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.000s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.000s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.001s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),,,,19-07-2024 10:22:55,19-07-2024 10:22:55,0.001s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),,,,19-07-2024 10:22:55,19-07-2024 10:22:56,1.313s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),,,,19-07-2024 10:22:56,19-07-2024 10:22:56,0.001s,PASSED
+"degree"", degree).hasProperty(""data.id"")",,,,19-07-2024 10:22:56,19-07-2024 10:22:58,1.309s,PASSED
+Start listener action : after,,,,19-07-2024 10:22:58,19-07-2024 10:22:58,0.001s,PASSED
+Start listener action : closeApplication,,,,19-07-2024 10:22:58,19-07-2024 10:22:58,0.004s,ERROR
+Start listener action : closeBrowser,,,,19-07-2024 10:22:58,19-07-2024 10:22:58,0.001s,PASSED

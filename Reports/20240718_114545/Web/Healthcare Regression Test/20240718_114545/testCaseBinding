@@ -1,0 +1,10 @@
+{"testCaseName":"Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts","testCaseId":"Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts","testCaseId":"Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully","testCaseId":"Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account","testCaseId":"Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully","testCaseId":"Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully","testCaseId":"Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully","testCaseId":"Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully","testCaseId":"Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile","testCaseId":"Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web/Sign In/WEB_Verify sign in successfully","testCaseId":"Test Cases/Web/Sign In/WEB_Verify sign in successfully","iterationVariableName":""}

@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Healthcare Regression Test" time="366.333" tests="10" failures="1" errors="0">
+   <testsuite name="Healthcare Regression Test" tests="10" failures="1" errors="0" time="366.333" skipped="0" timestamp="18-07-2024T11:26:57" hostname="linh.phan - 10.10.33.205" id="Test Suites/Web/Healthcare Regression Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651"/>
+         <property name="logFiles" value="/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/execution0.log"/>
+         <property name="attachments" value="/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721276933471.png, /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721277001743.png, /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721277002319.png"/>
+         <property name="hostName" value="linh.phan - 10.10.33.205"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.1.212"/>
+         <property name="browser" value="Chrome 121.0.0.0"/>
+         <property name="hostAddress" value="10.10.33.205"/>
+         <property name="sessionId" value="d72462be56e8387920ac4e9ed3e1713d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts" time="35.228" classname="Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:26:57 - [TEST_CASE][PASSED] - Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts: Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts
+
+18-07-2024T11:26:57 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:26:57 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:26:57 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:26:58 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:26:58 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:26:58 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:26:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:27:07 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:27:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:27:08 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:27:08 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:27:08 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:08 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:09 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:27:10 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:27:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:10 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T11:27:12 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:27:12 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:27:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:27:12 - [TEST_STEP][PASSED] - clickRandomPagination().verifyCurrentListNotEqualToPreviousList(): The previous list is different from current list
+
+18-07-2024T11:27:16 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/0.har
+
+18-07-2024T11:27:16 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:27:17 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/1.har
+
+18-07-2024T11:27:17 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:27:18 - [MESSAGE][PASSED] - Actual text '10' and expected text '10' are matched 
+
+18-07-2024T11:27:18 - [MESSAGE][PASSED] - Object 'objectName' is NOT clickable
+
+18-07-2024T11:27:18 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:27:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/svg' is clicked on
+
+18-07-2024T11:27:20 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:27:20 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:21 - [MESSAGE][PASSED] - Object 'objectName' is NOT clickable
+
+18-07-2024T11:27:22 - [MESSAGE][PASSED] - Text of object '' is: 'BxL Jpvhu'
+
+18-07-2024T11:27:22 - [MESSAGE][PASSED] - Text of object '' is: 'Gyj SFmNg'
+
+18-07-2024T11:27:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:27:23 - [MESSAGE][PASSED] - The previous list is different from current list
+
+18-07-2024T11:27:23 - [TEST_STEP][PASSED] - clickLastPagination().verifyFirstElementNameEqualToLastElementName(): First element name is equal to last element name after sorting
+
+18-07-2024T11:27:24 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:24 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T11:27:25 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'Acb EfiUC'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'AVa DAaWx'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'AVR UiUHu'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'Bql GhvfD'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'BqZ TmkDR'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'BxL Jpvhu'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'CCa Gcsst'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'Ddo NxWGn'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'Doctor Evan'
+
+18-07-2024T11:27:26 - [MESSAGE][PASSED] - Text of object '' is: 'Doctor Health Care'
+
+18-07-2024T11:27:27 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:28 - [MESSAGE][PASSED] - Text of object '' is: 'ZES FbStD'
+
+18-07-2024T11:27:28 - [MESSAGE][PASSED] - First element name is equal to last element name after sorting
+
+18-07-2024T11:27:28 - [TEST_STEP][PASSED] - clickLastPagination().verifyFirstElementNameEqualToLastElementName(): First element name is equal to last element name after sorting
+
+18-07-2024T11:27:28 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:28 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T11:27:29 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'ZES FbStD'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'YTa DHHuh'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'YHn MTzFJ'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'Xpp SrKZT'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'Xho Luzqf'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'Xff OwAuk'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'XDY RSlmu'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'WRN KikbG'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'WoR CdsCj'
+
+18-07-2024T11:27:30 - [MESSAGE][PASSED] - Text of object '' is: 'Wkt ACOOz'
+
+18-07-2024T11:27:31 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:27:32 - [MESSAGE][PASSED] - Text of object '' is: 'Acb EfiUC'
+
+18-07-2024T11:27:32 - [MESSAGE][PASSED] - First element name is equal to last element name after sorting
+
+18-07-2024T11:27:32 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:27:32 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:27:32 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:27:32 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts" time="150.061" classname="Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)&#xa;	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)&#xa;	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)&#xa;	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)&#xa;	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found&#xa;	... 25 more&#xa;"/>
+         <system-out><![CDATA[18-07-2024T11:27:32 - [TEST_CASE][FAILED] - Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts: Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	... 25 more
+
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:27:32 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:27:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:27:32 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:27:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:27:43 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:27:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:27:43 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:27:43 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:27:43 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:44 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:45 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:27:45 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:27:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:27:46 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T11:27:47 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:27:47 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:27:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:27:48 - [TEST_STEP][FAILED] - verifyFullNameDescIconIsVisible().verifyPaginationIsFocus(): Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+
+18-07-2024T11:28:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: button[aria-label='page 7']'. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:28:49 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Common/css'. Try using Self-healing.
+
+18-07-2024T11:28:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: '. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:28:51 - [MESSAGE][INFO] - [SELF-HEALING] No working XPath is found.
+
+18-07-2024T11:28:53 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: '. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:28:53 - [MESSAGE][FAILED] - Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+[[ATTACHMENT|/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721276933471.png]]
+
+18-07-2024T11:28:53 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T11:28:54 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:28:55 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:28:55 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T11:28:55 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:28:56 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:29:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: button[aria-label='page 7']'. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:29:57 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Common/css'. Try using Self-healing.
+
+18-07-2024T11:29:58 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: '. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:29:59 - [MESSAGE][INFO] - [SELF-HEALING] No working XPath is found.
+
+18-07-2024T11:30:01 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: '. Please recheck the objects properties to make sure the desired element is located. 
+
+18-07-2024T11:30:02 - [MESSAGE][FAILED] - Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+[[ATTACHMENT|/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721277001743.png]]
+
+18-07-2024T11:30:02 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:30:02 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:02 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+18-07-2024T11:30:02 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/1721277002319.png]]
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:30:02 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[18-07-2024T11:27:32 - [TEST_CASE][FAILED] - Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts: Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	... 25 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully" time="39.019" classname="Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:30:02 - [TEST_CASE][PASSED] - Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully: Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:30:02 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:30:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:30:02 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:30:02 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:30:08 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:30:08 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - fullName = RandomProfileGenerator).generateRandomName(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - gender = RandomProfileGenerator).generateRandomGender(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - birthday = RandomProfileGenerator).generateRandomBirthday(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - degree = RandomProfileGenerator).generateRandomDegree(): null
+
+18-07-2024T11:30:08 - [TEST_STEP][PASSED] - speciality = RandomProfileGenerator).generateRandomSpeciality(): Send request successfully
+
+18-07-2024T11:30:10 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/2.har
+
+18-07-2024T11:30:10 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:30:10 - [TEST_STEP][PASSED] - address = RandomProfileGenerator).generateRandomAddress(): null
+
+18-07-2024T11:30:10 - [TEST_STEP][PASSED] - description = RandomProfileGenerator).generateRandomDescription(): null
+
+18-07-2024T11:30:10 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:10 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:11 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:30:12 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:30:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:12 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T11:30:13 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:30:13 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:14 - [TEST_STEP][PASSED] - row = Doctor).getDoctorInformationOfRandomRow(): Text of object 'objectName' is: 'UNACTIVATED'
+
+18-07-2024T11:30:15 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'ElA ZpJXG'
+
+18-07-2024T11:30:15 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'q4ycjyvozwauto@gmail.com'
+
+18-07-2024T11:30:16 - [MESSAGE][PASSED] - Text of object 'objectName' is: ''
+
+18-07-2024T11:30:16 - [MESSAGE][PASSED] - Text of object 'objectName' is: ''
+
+18-07-2024T11:30:16 - [MESSAGE][PASSED] - Text of object 'objectName' is: ''
+
+18-07-2024T11:30:17 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'UNACTIVATED'
+
+18-07-2024T11:30:17 - [TEST_STEP][PASSED] - clickEditDoctorProfile().verifyEditDoctorProfileWithDoctorViewList(): Doctor profile matches with doctor view list
+
+18-07-2024T11:30:17 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:18 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'ElA ZpJXG'
+
+18-07-2024T11:30:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: ''
+
+18-07-2024T11:30:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: ''
+
+18-07-2024T11:30:19 - [MESSAGE][PASSED] - Attribute 'value' of object 'objectName' is: ''
+
+18-07-2024T11:30:19 - [MESSAGE][PASSED] - Doctor profile matches with doctor view list
+
+18-07-2024T11:30:19 - [TEST_STEP][PASSED] - clickConfirm().verifyNotiMessage("Update profile successfully"): Actual object 'Update profile successfully' and expected object 'Update profile successfully' are equal
+
+18-07-2024T11:30:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:30:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/id' is clicked on
+
+18-07-2024T11:30:23 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/id' is clicked on
+
+18-07-2024T11:30:24 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:27 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '+84931180581'
+
+18-07-2024T11:30:27 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '286/12 EwYAiED'
+
+18-07-2024T11:30:27 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'NoXKPhqxrtmipnLg525kEJWmwZCZXe'
+
+18-07-2024T11:30:28 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'EcX RPQbk'
+
+18-07-2024T11:30:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Professor of Medicine'
+
+18-07-2024T11:30:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Endocrinology'
+
+18-07-2024T11:30:28 - [MESSAGE][PASSED] - Attribute 'value' of object 'objectName' is: '16-04-2020'
+
+18-07-2024T11:30:29 - [MESSAGE][PASSED] - Attribute 'value' of object 'objectName' is: 'MALE'
+
+18-07-2024T11:30:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Update profile successfully'
+
+18-07-2024T11:30:32 - [MESSAGE][PASSED] - Actual object 'Update profile successfully' and expected object 'Update profile successfully' are equal
+
+18-07-2024T11:30:32 - [TEST_STEP][PASSED] - verifyAllDoctorProfile().clickCancel(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:32 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:34 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '+84931180581'
+
+18-07-2024T11:30:34 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '286/12 EwYAiED'
+
+18-07-2024T11:30:34 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'NoXKPhqxrtmipnLg525kEJWmwZCZXe'
+
+18-07-2024T11:30:35 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'EcX RPQbk'
+
+18-07-2024T11:30:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Professor of Medicine'
+
+18-07-2024T11:30:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Endocrinology'
+
+18-07-2024T11:30:36 - [MESSAGE][PASSED] - Attribute 'value' of object 'objectName' is: '16-04-2020'
+
+18-07-2024T11:30:36 - [MESSAGE][PASSED] - Object '' is checked
+
+18-07-2024T11:30:36 - [MESSAGE][PASSED] - Attribute 'value' of object '' is: 'MALE'
+
+18-07-2024T11:30:36 - [MESSAGE][PASSED] - Doctor profile matches with newest information
+
+18-07-2024T11:30:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:36 - [TEST_STEP][PASSED] - clickEditDoctorProfile().verifyEditDoctorProfileWithDoctorViewList(): Doctor profile matches with doctor view list
+
+18-07-2024T11:30:37 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'EcX RPQbk'
+
+18-07-2024T11:30:37 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'q4ycjyvozwauto@gmail.com'
+
+18-07-2024T11:30:38 - [MESSAGE][PASSED] - Text of object 'objectName' is: '16-04-2020'
+
+18-07-2024T11:30:38 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'Endocrinology'
+
+18-07-2024T11:30:38 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'Professor of Medicine'
+
+18-07-2024T11:30:38 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'UNACTIVATED'
+
+18-07-2024T11:30:39 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:40 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'EcX RPQbk'
+
+18-07-2024T11:30:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Professor of Medicine'
+
+18-07-2024T11:30:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Endocrinology'
+
+18-07-2024T11:30:41 - [MESSAGE][PASSED] - Attribute 'value' of object 'objectName' is: '16-04-2020'
+
+18-07-2024T11:30:41 - [MESSAGE][PASSED] - Doctor profile matches with doctor view list
+
+18-07-2024T11:30:41 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:30:41 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:41 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:30:41 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account" time="17.347" classname="Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:30:41 - [TEST_CASE][PASSED] - Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account: Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:30:41 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:30:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:30:41 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:30:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:30:47 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:30:47 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:30:48 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:30:48 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:30:48 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:48 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:49 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:30:50 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:30:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:30:50 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T11:30:51 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:30:51 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:52 - [TEST_STEP][PASSED] - row = Doctor).clickRandomMoreIcon(): Object: 'objectName' is clicked on
+
+18-07-2024T11:30:53 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:30:53 - [TEST_STEP][PASSED] - verifyCloseIconClickable().verifyConfirmClickable(): Object 'Object Repository/Common/btn' is clickable
+
+18-07-2024T11:30:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:30:55 - [MESSAGE][PASSED] - Object 'Object Repository/Common/text' is visible
+
+18-07-2024T11:30:55 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:30:55 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:56 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:56 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:56 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:56 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:30:57 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:30:57 - [MESSAGE][PASSED] - Object 'Object Repository/Common/svg' is clickable
+
+18-07-2024T11:30:57 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:58 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:58 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T11:30:58 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T11:30:58 - [MESSAGE][PASSED] - Object 'Object Repository/Common/btn' is clickable
+
+18-07-2024T11:30:58 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:30:58 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:58 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:30:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:30:59 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully" time="20.379" classname="Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:30:59 - [TEST_CASE][PASSED] - Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully: Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:30:59 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:30:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:30:59 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:30:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:31:04 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:31:04 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:31:05 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:31:05 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:31:05 - [TEST_STEP][PASSED] - token = signIn(email, pwd).getAccessToken(): Send request successfully
+
+18-07-2024T11:31:06 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/3.har
+
+18-07-2024T11:31:06 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:06 - [TEST_STEP][PASSED] - initRequestObject().getSpecialtyList(token): Send request successfully
+
+18-07-2024T11:31:08 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/4.har
+
+18-07-2024T11:31:08 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:09 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/5.har
+
+18-07-2024T11:31:09 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:09 - [TEST_STEP][PASSED] - specialtyUUID = SpecialtyManagementService).getSpecialtyId(0): null
+
+18-07-2024T11:31:09 - [TEST_STEP][PASSED] - specialtyStatus = SpecialtyManagementService).getSpecialtyStatus(0): null
+
+18-07-2024T11:31:09 - [TEST_STEP][PASSED] - specialtyName = SpecialtyManagementService).getSpecialtyName(0): null
+
+18-07-2024T11:31:09 - [TEST_STEP][PASSED] - initRequestObject().deactivateSpecialty(token, specialtyUUID): Send request successfully
+
+18-07-2024T11:31:10 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/6.har
+
+18-07-2024T11:31:10 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:10 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:10 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:11 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:31:12 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:31:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:12 - [TEST_STEP][PASSED] - LeftNavBar).clickSpecialty(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:13 - [TEST_STEP][PASSED] - verifyNotiMessage("Reactivate the speciality successfully").verifySpecialtyStatus(0, "ACTIVATED"): Actual object 'ACTIVATED' and expected object 'ACTIVATED' are equal
+
+18-07-2024T11:31:14 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:31:15 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:31:15 - [MESSAGE][PASSED] - Keys 'Anaesthesiology' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:31:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/type' is clicked on
+
+18-07-2024T11:31:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Reactivate the speciality successfully'
+
+18-07-2024T11:31:17 - [MESSAGE][PASSED] - Actual object 'Reactivate the speciality successfully' and expected object 'Reactivate the speciality successfully' are equal
+
+18-07-2024T11:31:17 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'ACTIVATED'
+
+18-07-2024T11:31:17 - [MESSAGE][PASSED] - Actual object 'ACTIVATED' and expected object 'ACTIVATED' are equal
+
+18-07-2024T11:31:17 - [TEST_STEP][PASSED] - Start tear down : tearDown: Method 'tearDown' complete successfully
+
+18-07-2024T11:31:17 - [TEST_STEP][PASSED] - if (specialtyStatus == "true"): Verify response status code successfully
+
+18-07-2024T11:31:17 - [TEST_STEP][PASSED] - activateSpecialty(token, specialtyUUID).verifyStatusCode(200): Verify response status code successfully
+
+18-07-2024T11:31:19 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/7.har
+
+18-07-2024T11:31:19 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-07-2024T11:31:19 - [MESSAGE][PASSED] - Method 'tearDown' complete successfully
+
+18-07-2024T11:31:19 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:31:19 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:19 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:31:19 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully" time="22.531" classname="Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:31:19 - [TEST_CASE][PASSED] - Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully: Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:31:19 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:31:19 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:31:19 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:31:19 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:31:29 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:31:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:31:30 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:31:30 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:31:30 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:30 - [TEST_STEP][PASSED] - clickSignInButton().waitNotiMessageDisappear(): Web element with id: 'Object Repository/Common/id' located by 'By.xpath: //*[@id = 'notistack-snackbar']' is not present after '7' second(s)
+
+18-07-2024T11:31:31 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:31:31 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:31:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:33 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Common/id' located by 'By.xpath: //*[@id = 'notistack-snackbar']' is not present after '7' second(s)
+
+18-07-2024T11:31:33 - [TEST_STEP][PASSED] - LeftNavBar).clickSpecialty(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:34 - [TEST_STEP][PASSED] - specialityName = "Auto speciality " + RandomStringUtils.randomAlphabetic(5): null
+
+18-07-2024T11:31:34 - [TEST_STEP][PASSED] - clickConfirm().verifyNotiMessage("Create a new speciality successfully"): Actual object 'Create a new speciality successfully' and expected object 'Create a new speciality successfully' are equal
+
+18-07-2024T11:31:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Create a new speciality successfully'
+
+18-07-2024T11:31:36 - [MESSAGE][PASSED] - Actual object 'Create a new speciality successfully' and expected object 'Create a new speciality successfully' are equal
+
+18-07-2024T11:31:36 - [TEST_STEP][PASSED] - Start tear down : tearDown: Method 'tearDown' complete successfully
+
+18-07-2024T11:31:36 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:31:36 - [TEST_STEP][PASSED] - adminAccessToken = signIn(email, pwd).getAccessToken(): Send request successfully
+
+18-07-2024T11:31:37 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/8.har
+
+18-07-2024T11:31:37 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:37 - [TEST_STEP][PASSED] - specialityId = id: Send request successfully
+
+18-07-2024T11:31:39 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/9.har
+
+18-07-2024T11:31:39 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:40 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/10.har
+
+18-07-2024T11:31:40 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:40 - [TEST_STEP][PASSED] - initRequestObject().deactivateSpecialty(adminAccessToken, specialityId): Send request successfully
+
+18-07-2024T11:31:41 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/11.har
+
+18-07-2024T11:31:41 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:31:41 - [MESSAGE][PASSED] - Method 'tearDown' complete successfully
+
+18-07-2024T11:31:41 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:31:41 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:41 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:31:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:31:42 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully" time="26.638" classname="Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:31:42 - [TEST_CASE][PASSED] - Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully: Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:31:42 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:31:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:31:42 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:31:42 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:31:50 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:31:50 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:31:50 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:31:50 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T11:31:50 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:52 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:54 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:31:55 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:31:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:31:55 - [TEST_STEP][PASSED] - LeftNavBar).clickSpecialty(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T11:31:57 - [TEST_STEP][PASSED] - randomIndex = Specialty).getRandomSpecialtyIndex(): null
+
+18-07-2024T11:31:57 - [TEST_STEP][PASSED] - specialtyName = Specialty).getSpecialtyName(randomIndex): Text of object 'objectName' is: 'Auto speciality dDMED'
+
+18-07-2024T11:31:57 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'Auto speciality dDMED'
+
+18-07-2024T11:31:57 - [TEST_STEP][PASSED] - specialtyDescription = Specialty).getSpecialtyDescription(randomIndex): Text of object 'objectName' is: ''
+
+18-07-2024T11:31:58 - [MESSAGE][PASSED] - Text of object 'objectName' is: ''
+
+18-07-2024T11:31:58 - [TEST_STEP][PASSED] - verifySpecialtyName(randomIndex, "This is new title").verifySpecialtyDescription(randomIndex, "This is description"): Actual object 'This is description' and expected object 'This is description' are equal
+
+18-07-2024T11:31:58 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T11:31:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:31:59 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'Auto speciality dDMED'
+
+18-07-2024T11:31:59 - [MESSAGE][PASSED] - Actual object 'Auto speciality dDMED' and expected object 'Auto speciality dDMED' are equal
+
+18-07-2024T11:32:00 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: ''
+
+18-07-2024T11:32:00 - [MESSAGE][PASSED] - Actual object '' and expected object '' are equal
+
+18-07-2024T11:32:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Update speciality successfully'
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Actual object 'Update speciality successfully' and expected object 'Update speciality successfully' are equal
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'This is new title'
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Actual object 'This is new title' and expected object 'This is new title' are equal
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Text of object 'objectName' is: 'This is description'
+
+18-07-2024T11:32:03 - [MESSAGE][PASSED] - Actual object 'This is description' and expected object 'This is description' are equal
+
+18-07-2024T11:32:03 - [TEST_STEP][PASSED] - adminAccessToken = signIn(email, pwd).getAccessToken(): Send request successfully
+
+18-07-2024T11:32:04 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/12.har
+
+18-07-2024T11:32:04 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:05 - [TEST_STEP][PASSED] - specialtyIndex = initRequestObject().getSpecialtyIndexByName(adminAccessToken, "This is new title"): Send request successfully
+
+18-07-2024T11:32:06 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/13.har
+
+18-07-2024T11:32:06 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:07 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/14.har
+
+18-07-2024T11:32:07 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:07 - [TEST_STEP][PASSED] - specialtyUUID = SpecialtyManagementService).getSpecialtyId(specialtyIndex): null
+
+18-07-2024T11:32:07 - [TEST_STEP][PASSED] - updateSpecialty(adminAccessToken, specialtyUUID, specialtyName, specialtyDescription).verifyStatusCode(200): Verify response status code successfully
+
+18-07-2024T11:32:08 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/15.har
+
+18-07-2024T11:32:08 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-07-2024T11:32:08 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:32:08 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:08 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:32:08 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully" time="20.861" classname="Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:32:08 - [TEST_CASE][PASSED] - Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully: Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:32:08 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:32:08 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:32:08 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:32:16 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:16 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:32:17 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:32:17 - [TEST_STEP][PASSED] - user = withRole("Patient").getFirst(): null
+
+18-07-2024T11:32:17 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:17 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:18 - [MESSAGE][PASSED] - Keys 'patient@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:32:19 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:32:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:19 - [TEST_STEP][PASSED] - clickAvatar().clickProfile(): Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:20 - [TEST_STEP][PASSED] - clickUpdateProfileButton().verifyNotiMessage("Updated profile successfully"): Actual object 'Updated profile successfully' and expected object 'Updated profile successfully' are equal
+
+18-07-2024T11:32:22 - [MESSAGE][PASSED] - Keys 'COMMAND + DELETE + a' sent to object: 'Object Repository/Common/placeholder'
+
+18-07-2024T11:32:23 - [MESSAGE][PASSED] - Keys '14092001' sent to object: 'Object Repository/Common/placeholder'
+
+18-07-2024T11:32:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/id' is: 'Updated profile successfully'
+
+18-07-2024T11:32:26 - [MESSAGE][PASSED] - Actual object 'Updated profile successfully' and expected object 'Updated profile successfully' are equal
+
+18-07-2024T11:32:26 - [TEST_STEP][PASSED] - patientAccessToken = signIn(email, pwd).getAccessToken(): Send request successfully
+
+18-07-2024T11:32:28 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/16.har
+
+18-07-2024T11:32:28 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:28 - [TEST_STEP][PASSED] - toUpperCase(), weight, height).verifyStatusCode(200): Verify response status code successfully
+
+18-07-2024T11:32:29 - [MESSAGE][INFO] - HAR: /Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_112651/Web/Healthcare Regression Test/20240718_112651/requests/main/17.har
+
+18-07-2024T11:32:29 - [MESSAGE][PASSED] - Send request successfully
+
+18-07-2024T11:32:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-07-2024T11:32:29 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:32:29 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:29 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:32:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile" time="22.112" classname="Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:32:29 - [TEST_CASE][PASSED] - Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile: Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:32:29 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:32:29 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:32:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:32:37 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:37 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:32:38 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:32:38 - [TEST_STEP][PASSED] - user = withRole("Patient").getFirst(): null
+
+18-07-2024T11:32:38 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:38 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:39 - [MESSAGE][PASSED] - Keys 'patient@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:32:39 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:32:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:40 - [TEST_STEP][PASSED] - clickAvatar().clickProfile(): Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:41 - [TEST_STEP][PASSED] - patientFullName = PatientProfile).getFullName(): Attribute 'value' of object 'Object Repository/Common/id' is: 'Patient Moca'
+
+18-07-2024T11:32:42 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'Patient Moca'
+
+18-07-2024T11:32:42 - [TEST_STEP][PASSED] - patientPhoneNumber = PatientProfile).getPhoneNumber(): Attribute 'value' of object 'Object Repository/Common/id' is: '0900000020'
+
+18-07-2024T11:32:42 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '0900000020'
+
+18-07-2024T11:32:42 - [TEST_STEP][PASSED] - patientBirthday = PatientProfile).getBirthday(): Attribute 'value' of object 'Object Repository/Common/placeholder' is: '14-09-2000'
+
+18-07-2024T11:32:43 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/placeholder' is: '14-09-2000'
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - patientGender = PatientProfile).getGender(): Text of object 'Object Repository/Common/css' is: 'MALE'
+
+18-07-2024T11:32:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/css' is: 'MALE'
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - newGender = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - if (patientGender == "MALE"): null
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - newGender = "FEMALE": null
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - patientHeight = PatientProfile).getHeight(): Attribute 'value' of object 'Object Repository/Common/id' is: '180'
+
+18-07-2024T11:32:43 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '180'
+
+18-07-2024T11:32:43 - [TEST_STEP][PASSED] - patientWeight = PatientProfile).getWeight(): Attribute 'value' of object 'Object Repository/Common/id' is: '70'
+
+18-07-2024T11:32:44 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '70'
+
+18-07-2024T11:32:44 - [TEST_STEP][PASSED] - patientAddress = PatientProfile).getAddress(): Attribute 'value' of object 'Object Repository/Common/id' is: 'Viet Nam'
+
+18-07-2024T11:32:44 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'Viet Nam'
+
+18-07-2024T11:32:44 - [TEST_STEP][PASSED] - verifyWeight(patientWeight).verifyAddress(patientAddress): Actual object 'Viet Nam' and expected object 'Viet Nam' are equal
+
+18-07-2024T11:32:45 - [MESSAGE][PASSED] - Keys 'COMMAND + DELETE + a' sent to object: 'Object Repository/Common/placeholder'
+
+18-07-2024T11:32:46 - [MESSAGE][PASSED] - Keys '14093000' sent to object: 'Object Repository/Common/placeholder'
+
+18-07-2024T11:32:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/css' is clicked on
+
+18-07-2024T11:32:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:32:49 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'Patient Moca'
+
+18-07-2024T11:32:49 - [MESSAGE][PASSED] - Actual object 'Patient Moca' and expected object 'Patient Moca' are equal
+
+18-07-2024T11:32:49 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '0900000020'
+
+18-07-2024T11:32:49 - [MESSAGE][PASSED] - Actual object '0900000020' and expected object '0900000020' are equal
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/placeholder' is: '14-09-2000'
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Actual object '14-09-2000' and expected object '14-09-2000' are equal
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/css' is: 'MALE'
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Actual object 'MALE' and expected object 'MALE' are equal
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '180'
+
+18-07-2024T11:32:50 - [MESSAGE][PASSED] - Actual object '180' and expected object '180' are equal
+
+18-07-2024T11:32:51 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: '70'
+
+18-07-2024T11:32:51 - [MESSAGE][PASSED] - Actual object '70' and expected object '70' are equal
+
+18-07-2024T11:32:51 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Common/id' is: 'Viet Nam'
+
+18-07-2024T11:32:51 - [MESSAGE][PASSED] - Actual object 'Viet Nam' and expected object 'Viet Nam' are equal
+
+18-07-2024T11:32:51 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:32:51 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:51 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:32:51 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Sign In/WEB_Verify sign in successfully" time="11.871" classname="Test Cases/Web/Sign In/WEB_Verify sign in successfully" status="PASSED">
+         <system-out><![CDATA[18-07-2024T11:32:51 - [TEST_CASE][PASSED] - Test Cases/Web/Sign In/WEB_Verify sign in successfully: Test Cases/Web/Sign In/WEB_Verify sign in successfully
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (isFlutterTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T11:32:51 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T11:32:51 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T11:32:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T11:32:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T11:32:59 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T11:33:00 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T11:33:00 - [TEST_STEP][PASSED] - user = withRole("Patient").getFirst(): null
+
+18-07-2024T11:33:00 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:33:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:33:00 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:33:01 - [MESSAGE][PASSED] - Keys 'patient@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T11:33:01 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T11:33:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T11:33:02 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T11:33:03 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T11:33:03 - [TEST_STEP][ERROR] - Start listener action : after: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T11:33:03 - [TEST_STEP][ERROR] - isFlutterRunning = false: groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:33:03 - [MESSAGE][ERROR] - groovy.lang.MissingPropertyException: No such property: isFlutterRunning for class: internal.GlobalVariable
+	at ApiWebTestListener.after(ApiWebTestListener.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:315)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T11:33:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T11:33:03 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-07-2024T11:26:57 - [TEST_SUITE][FAILED] - Healthcare Regression Test: Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	... 25 more]]></system-out>
+      <system-err><![CDATA[18-07-2024T11:26:57 - [TEST_SUITE][FAILED] - Healthcare Regression Test: Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:401)
+	at katalon.web.admin.Doctor.verifyPaginationIsFocus(Doctor.groovy:393)
+	at WEB_Verify UI View the list of doctor accounts.run(WEB_Verify UI View the list of doctor accounts:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1721276811609.run(TempTestSuite1721276811609.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Common/css' located by '' not found
+	... 25 more]]></system-err>
+   </testsuite>
+</testsuites>

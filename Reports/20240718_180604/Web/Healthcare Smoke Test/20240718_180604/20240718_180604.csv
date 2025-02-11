@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Healthcare Smoke Test,Chrome 121.0.0.0,,,18-07-2024 18:06:08,18-07-2024 18:06:40,31.486s,PASSED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts,Chrome 121.0.0.0,,"fast-test,ui,p1",18-07-2024 18:06:08,18-07-2024 18:06:24,15.539s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 18:06:09,18-07-2024 18:06:09,0.365s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 18:06:09,18-07-2024 18:06:09,0.012s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 18:06:09,18-07-2024 18:06:16,7.206s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 18:06:16,18-07-2024 18:06:16,0.102s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin,,18-07-2024 18:06:16,18-07-2024 18:06:17,0.469s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 18:06:17,18-07-2024 18:06:18,1.565s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 18:06:18,18-07-2024 18:06:20,1.340s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,,,18-07-2024 18:06:20,18-07-2024 18:06:20,0.387s,PASSED
+clickFullNameColumnTitle().verifyFullNameDescIconIsVisible(),Chrome 121.0.0.0,Verify pagination,,18-07-2024 18:06:20,18-07-2024 18:06:24,3.681s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:24,0.002s,PASSED
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:24,0.003s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:24,0.278s,PASSED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account,Chrome 121.0.0.0,,"fast-test,ui,p1",18-07-2024 18:06:24,18-07-2024 18:06:40,15.767s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:24,0.032s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:24,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 18:06:24,18-07-2024 18:06:30,5.494s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 18:06:30,18-07-2024 18:06:30,0.005s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,,,18-07-2024 18:06:30,18-07-2024 18:06:30,0.333s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 18:06:30,18-07-2024 18:06:32,1.564s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 18:06:32,18-07-2024 18:06:33,1.303s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,,,18-07-2024 18:06:33,18-07-2024 18:06:33,0.376s,PASSED
+row = Doctor).clickRandomMoreIcon(),Chrome 121.0.0.0,,,18-07-2024 18:06:33,18-07-2024 18:06:34,1.271s,PASSED
+verifyCloseIconClickable().verifyConfirmClickable(),Chrome 121.0.0.0,,,18-07-2024 18:06:34,18-07-2024 18:06:40,5.015s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 18:06:40,18-07-2024 18:06:40,0.039s,PASSED
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 18:06:40,18-07-2024 18:06:40,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 18:06:40,18-07-2024 18:06:40,0.231s,PASSED

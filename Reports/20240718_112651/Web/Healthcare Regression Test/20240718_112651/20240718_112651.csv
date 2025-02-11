@@ -1,0 +1,177 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Healthcare Regression Test,Chrome 121.0.0.0,,,18-07-2024 11:26:57,18-07-2024 11:33:03,6m - 6.333s,FAILED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify View the list of doctor accounts,Chrome 121.0.0.0,,"story-test,ui,p1",18-07-2024 11:26:57,18-07-2024 11:27:32,35.228s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:26:57,18-07-2024 11:26:58,0.601s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:26:58,18-07-2024 11:26:58,0.015s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:26:58,18-07-2024 11:27:08,9.955s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:27:08,18-07-2024 11:27:08,0.084s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin,,18-07-2024 11:27:08,18-07-2024 11:27:08,0.650s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:27:08,18-07-2024 11:27:10,1.929s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 11:27:10,18-07-2024 11:27:12,1.426s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,,,18-07-2024 11:27:12,18-07-2024 11:27:12,0.510s,PASSED
+clickRandomPagination().verifyCurrentListNotEqualToPreviousList(),Chrome 121.0.0.0,Verify pagination,,18-07-2024 11:27:12,18-07-2024 11:27:23,11.078s,PASSED
+clickLastPagination().verifyFirstElementNameEqualToLastElementName(),Chrome 121.0.0.0,Sort asc by full name,,18-07-2024 11:27:23,18-07-2024 11:27:28,4.132s,PASSED
+clickLastPagination().verifyFirstElementNameEqualToLastElementName(),Chrome 121.0.0.0,Sort desc by full name,,18-07-2024 11:27:28,18-07-2024 11:27:32,4.283s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:32,0.014s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:32,0.005s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:32,0.301s,PASSED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts,Chrome 121.0.0.0,,"fast-test,ui,p1",18-07-2024 11:27:32,18-07-2024 11:30:02,2m - 30.061s,FAILED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:32,0.006s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:32,0.002s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:27:32,18-07-2024 11:27:43,11.101s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:27:43,18-07-2024 11:27:43,0.007s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin,,18-07-2024 11:27:43,18-07-2024 11:27:44,0.397s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:27:44,18-07-2024 11:27:46,1.780s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 11:27:46,18-07-2024 11:27:47,1.465s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,,,18-07-2024 11:27:47,18-07-2024 11:27:48,0.483s,PASSED
+verifyFullNameDescIconIsVisible().verifyPaginationIsFocus(),Chrome 121.0.0.0,Verify pagination,,18-07-2024 11:27:48,18-07-2024 11:30:02,2m - 13.989s,FAILED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:02,0.005s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:02,0.002s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:02,0.691s,PASSED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify View-Edit doctor account successfully,Chrome 121.0.0.0,,"story-test,ui,p2",18-07-2024 11:30:02,18-07-2024 11:30:41,39.019s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:02,0.004s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:02,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:02,18-07-2024 11:30:08,6.013s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.006s,PASSED
+fullName = RandomProfileGenerator).generateRandomName(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.021s,PASSED
+phoneNumber = RandomProfileGenerator).generateRandomPhoneNumber(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.003s,PASSED
+gender = RandomProfileGenerator).generateRandomGender(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.003s,PASSED
+birthday = RandomProfileGenerator).generateRandomBirthday(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.015s,PASSED
+degree = RandomProfileGenerator).generateRandomDegree(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:08,0.004s,PASSED
+speciality = RandomProfileGenerator).generateRandomSpeciality(),Chrome 121.0.0.0,,,18-07-2024 11:30:08,18-07-2024 11:30:10,1.516s,PASSED
+address = RandomProfileGenerator).generateRandomAddress(),Chrome 121.0.0.0,,,18-07-2024 11:30:10,18-07-2024 11:30:10,0.005s,PASSED
+description = RandomProfileGenerator).generateRandomDescription(),Chrome 121.0.0.0,,,18-07-2024 11:30:10,18-07-2024 11:30:10,0.002s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Login as admin,,18-07-2024 11:30:10,18-07-2024 11:30:10,0.426s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:30:10,18-07-2024 11:30:12,1.488s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 11:30:12,18-07-2024 11:30:13,1.373s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,Click doctor button on left side bar,,18-07-2024 11:30:13,18-07-2024 11:30:14,0.457s,PASSED
+row = Doctor).getDoctorInformationOfRandomRow(),Chrome 121.0.0.0,Get random row and save doctor information of that row,,18-07-2024 11:30:14,18-07-2024 11:30:17,2.764s,PASSED
+clickEditDoctorProfile().verifyEditDoctorProfileWithDoctorViewList(),Chrome 121.0.0.0,Compare information of view list with information of doctor profile,,18-07-2024 11:30:17,18-07-2024 11:30:19,2.881s,PASSED
+"clickConfirm().verifyNotiMessage(""Update profile successfully"")",Chrome 121.0.0.0,Update doctor profile,,18-07-2024 11:30:19,18-07-2024 11:30:32,12.674s,PASSED
+verifyAllDoctorProfile().clickCancel(),Chrome 121.0.0.0,Compare doctor information after updating with information after updating,,18-07-2024 11:30:32,18-07-2024 11:30:36,4.327s,PASSED
+clickEditDoctorProfile().verifyEditDoctorProfileWithDoctorViewList(),Chrome 121.0.0.0,Compare information of view list with information of doctor profile,,18-07-2024 11:30:36,18-07-2024 11:30:41,4.587s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:41,0.005s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:41,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:41,0.268s,PASSED
+,,,,,,,
+Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account,Chrome 121.0.0.0,,"fast-test,ui,p1",18-07-2024 11:30:41,18-07-2024 11:30:59,17.347s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:41,0.002s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:41,0.002s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:41,18-07-2024 11:30:48,6.587s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:30:48,18-07-2024 11:30:48,0.005s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,,,18-07-2024 11:30:48,18-07-2024 11:30:48,0.384s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:30:48,18-07-2024 11:30:50,1.512s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,,,18-07-2024 11:30:50,18-07-2024 11:30:51,1.384s,PASSED
+LeftNavBar).clickDoctor(),Chrome 121.0.0.0,,,18-07-2024 11:30:51,18-07-2024 11:30:52,0.474s,PASSED
+row = Doctor).clickRandomMoreIcon(),Chrome 121.0.0.0,,,18-07-2024 11:30:52,18-07-2024 11:30:53,1.378s,PASSED
+verifyCloseIconClickable().verifyConfirmClickable(),Chrome 121.0.0.0,,,18-07-2024 11:30:53,18-07-2024 11:30:58,5.209s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:30:58,18-07-2024 11:30:58,0.037s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:58,18-07-2024 11:30:58,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:58,18-07-2024 11:30:59,0.251s,PASSED
+,,,,,,,
+Test Cases/Web/Specialty Management/WEB_Verify activate specialty successfully,Chrome 121.0.0.0,,"story-test,ui,p2",18-07-2024 11:30:59,18-07-2024 11:31:19,20.379s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:30:59,18-07-2024 11:30:59,0.003s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:30:59,18-07-2024 11:30:59,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:30:59,18-07-2024 11:31:05,6.006s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:31:05,18-07-2024 11:31:05,0.008s,PASSED
+"token = signIn(email, pwd).getAccessToken()",Chrome 121.0.0.0,Deactivate the 1st specialty via api,,18-07-2024 11:31:05,18-07-2024 11:31:06,1.375s,PASSED
+initRequestObject().getSpecialtyList(token),Chrome 121.0.0.0,,,18-07-2024 11:31:06,18-07-2024 11:31:09,2.483s,PASSED
+specialtyUUID = SpecialtyManagementService).getSpecialtyId(0),Chrome 121.0.0.0,,,18-07-2024 11:31:09,18-07-2024 11:31:09,0.002s,PASSED
+specialtyStatus = SpecialtyManagementService).getSpecialtyStatus(0),Chrome 121.0.0.0,,,18-07-2024 11:31:09,18-07-2024 11:31:09,0.005s,PASSED
+specialtyName = SpecialtyManagementService).getSpecialtyName(0),Chrome 121.0.0.0,,,18-07-2024 11:31:09,18-07-2024 11:31:09,0.002s,PASSED
+"initRequestObject().deactivateSpecialty(token, specialtyUUID)",Chrome 121.0.0.0,,,18-07-2024 11:31:09,18-07-2024 11:31:10,1.077s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin and navigate to specialty management,,18-07-2024 11:31:10,18-07-2024 11:31:10,0.441s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:31:10,18-07-2024 11:31:12,1.729s,PASSED
+LeftNavBar).clickSpecialty(),Chrome 121.0.0.0,,,18-07-2024 11:31:12,18-07-2024 11:31:13,1.423s,PASSED
+"verifyNotiMessage(""Reactivate the speciality successfully"").verifySpecialtyStatus(0, ""ACTIVATED"")",Chrome 121.0.0.0,Verify activate specialty successfully,,18-07-2024 11:31:13,18-07-2024 11:31:17,3.733s,PASSED
+Start tear down : tearDown,Chrome 121.0.0.0,,,18-07-2024 11:31:17,18-07-2024 11:31:19,1.562s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:19,0.004s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:19,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:19,0.313s,PASSED
+,,,,,,,
+Test Cases/Web/Specialty Management/WEB_Verify Create specialty successfully,Chrome 121.0.0.0,,"story-test,ui,p2",18-07-2024 11:31:19,18-07-2024 11:31:42,22.531s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:19,0.002s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:19,0.000s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:31:19,18-07-2024 11:31:30,10.611s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:31:30,18-07-2024 11:31:30,0.006s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin,,18-07-2024 11:31:30,18-07-2024 11:31:30,0.343s,PASSED
+clickSignInButton().waitNotiMessageDisappear(),Chrome 121.0.0.0,,,18-07-2024 11:31:30,18-07-2024 11:31:33,3.002s,PASSED
+LeftNavBar).clickSpecialty(),Chrome 121.0.0.0,Click specialty on left navigation bar,,18-07-2024 11:31:33,18-07-2024 11:31:34,0.440s,PASSED
+"specialityName = ""Auto speciality "" + RandomStringUtils.randomAlphabetic(5)",Chrome 121.0.0.0,Verify create specialty successfully,,18-07-2024 11:31:34,18-07-2024 11:31:34,0.001s,PASSED
+"clickConfirm().verifyNotiMessage(""Create a new speciality successfully"")",Chrome 121.0.0.0,,,18-07-2024 11:31:34,18-07-2024 11:31:36,2.602s,PASSED
+Start tear down : tearDown,Chrome 121.0.0.0,,,18-07-2024 11:31:36,18-07-2024 11:31:41,5.189s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:31:41,18-07-2024 11:31:41,0.003s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:31:41,18-07-2024 11:31:41,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:31:41,18-07-2024 11:31:42,0.208s,PASSED
+,,,,,,,
+Test Cases/Web/Specialty Management/WEB_Verify update specialty successfully,Chrome 121.0.0.0,,"story-test,ui,p2",18-07-2024 11:31:42,18-07-2024 11:32:08,26.638s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:31:42,18-07-2024 11:31:42,0.003s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:31:42,18-07-2024 11:31:42,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:31:42,18-07-2024 11:31:50,8.743s,PASSED
+"user = withRole(""Admin"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:31:50,18-07-2024 11:31:50,0.004s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as admin and navigate to Specialty management page,,18-07-2024 11:31:50,18-07-2024 11:31:52,1.292s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:31:52,18-07-2024 11:31:55,3.348s,PASSED
+LeftNavBar).clickSpecialty(),Chrome 121.0.0.0,,,18-07-2024 11:31:55,18-07-2024 11:31:57,1.478s,PASSED
+randomIndex = Specialty).getRandomSpecialtyIndex(),Chrome 121.0.0.0,Get random Specialty in the 1st page of specialty list,,18-07-2024 11:31:57,18-07-2024 11:31:57,0.419s,PASSED
+specialtyName = Specialty).getSpecialtyName(randomIndex),Chrome 121.0.0.0,,,18-07-2024 11:31:57,18-07-2024 11:31:57,0.282s,PASSED
+specialtyDescription = Specialty).getSpecialtyDescription(randomIndex),Chrome 121.0.0.0,,,18-07-2024 11:31:57,18-07-2024 11:31:58,0.378s,PASSED
+"verifySpecialtyName(randomIndex, ""This is new title"").verifySpecialtyDescription(randomIndex, ""This is description"")",Chrome 121.0.0.0,Update specialty,,18-07-2024 11:31:58,18-07-2024 11:32:03,5.484s,PASSED
+"adminAccessToken = signIn(email, pwd).getAccessToken()",Chrome 121.0.0.0,Revert specialty information,,18-07-2024 11:32:03,18-07-2024 11:32:05,1.412s,PASSED
+"specialtyIndex = initRequestObject().getSpecialtyIndexByName(adminAccessToken, ""This is new title"")",Chrome 121.0.0.0,,,18-07-2024 11:32:05,18-07-2024 11:32:07,2.358s,PASSED
+specialtyUUID = SpecialtyManagementService).getSpecialtyId(specialtyIndex),Chrome 121.0.0.0,,,18-07-2024 11:32:07,18-07-2024 11:32:07,0.001s,PASSED
+"updateSpecialty(adminAccessToken, specialtyUUID, specialtyName, specialtyDescription).verifyStatusCode(200)",Chrome 121.0.0.0,,,18-07-2024 11:32:07,18-07-2024 11:32:08,1.124s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:08,0.002s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:08,0.000s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:08,0.191s,PASSED
+,,,,,,,
+Test Cases/Web/PatientProfile/WEB_Verify patient update profile successfully,Chrome 121.0.0.0,,"story-test,ui,p1",18-07-2024 11:32:08,18-07-2024 11:32:29,20.861s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:08,0.025s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:08,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:08,18-07-2024 11:32:17,8.597s,PASSED
+"user = withRole(""Patient"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:32:17,18-07-2024 11:32:17,0.005s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Sign in as patient,,18-07-2024 11:32:17,18-07-2024 11:32:17,0.359s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:32:17,18-07-2024 11:32:19,1.586s,PASSED
+clickAvatar().clickProfile(),Chrome 121.0.0.0,Navigate to patient profile,,18-07-2024 11:32:19,18-07-2024 11:32:20,1.422s,PASSED
+"clickUpdateProfileButton().verifyNotiMessage(""Updated profile successfully"")",Chrome 121.0.0.0,Verify Update patient profile,,18-07-2024 11:32:20,18-07-2024 11:32:26,5.863s,PASSED
+"patientAccessToken = signIn(email, pwd).getAccessToken()",Chrome 121.0.0.0,Revert patient information,,18-07-2024 11:32:26,18-07-2024 11:32:28,1.356s,PASSED
+"toUpperCase(), weight, height).verifyStatusCode(200)",Chrome 121.0.0.0,,,18-07-2024 11:32:28,18-07-2024 11:32:29,1.127s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:29,0.003s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:29,0.009s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:29,0.307s,PASSED
+,,,,,,,
+Test Cases/Web/PatientProfile/WEB_Verify patient can reset information while updating profile,Chrome 121.0.0.0,,"story-test,ui,p1",18-07-2024 11:32:29,18-07-2024 11:32:51,22.112s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:29,0.002s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:29,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:29,18-07-2024 11:32:38,8.475s,PASSED
+"user = withRole(""Patient"").getFirst()",Chrome 121.0.0.0,Get account to log in,,18-07-2024 11:32:38,18-07-2024 11:32:38,0.003s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,,,18-07-2024 11:32:38,18-07-2024 11:32:38,0.404s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,,,18-07-2024 11:32:38,18-07-2024 11:32:40,1.758s,PASSED
+clickAvatar().clickProfile(),Chrome 121.0.0.0,Navigate to patient profile,,18-07-2024 11:32:40,18-07-2024 11:32:41,1.493s,PASSED
+patientFullName = PatientProfile).getFullName(),Chrome 121.0.0.0,Get information before updating,,18-07-2024 11:32:41,18-07-2024 11:32:42,0.829s,PASSED
+patientPhoneNumber = PatientProfile).getPhoneNumber(),Chrome 121.0.0.0,,,18-07-2024 11:32:42,18-07-2024 11:32:42,0.291s,PASSED
+patientBirthday = PatientProfile).getBirthday(),Chrome 121.0.0.0,,,18-07-2024 11:32:42,18-07-2024 11:32:43,0.288s,PASSED
+patientGender = PatientProfile).getGender(),Chrome 121.0.0.0,,,18-07-2024 11:32:43,18-07-2024 11:32:43,0.355s,PASSED
+newGender = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 121.0.0.0,,,18-07-2024 11:32:43,18-07-2024 11:32:43,0.001s,PASSED
+"if (patientGender == ""MALE"")",Chrome 121.0.0.0,,,18-07-2024 11:32:43,18-07-2024 11:32:43,0.058s,PASSED
+patientHeight = PatientProfile).getHeight(),Chrome 121.0.0.0,,,18-07-2024 11:32:43,18-07-2024 11:32:43,0.266s,PASSED
+patientWeight = PatientProfile).getWeight(),Chrome 121.0.0.0,,,18-07-2024 11:32:43,18-07-2024 11:32:44,0.254s,PASSED
+patientAddress = PatientProfile).getAddress(),Chrome 121.0.0.0,,,18-07-2024 11:32:44,18-07-2024 11:32:44,0.257s,PASSED
+verifyWeight(patientWeight).verifyAddress(patientAddress),Chrome 121.0.0.0,Input new information then click RESET button,,18-07-2024 11:32:44,18-07-2024 11:32:51,6.860s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:32:51,0.002s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:32:51,0.001s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:32:51,0.365s,PASSED
+,,,,,,,
+Test Cases/Web/Sign In/WEB_Verify sign in successfully,Chrome 121.0.0.0,,"story-test,ui,p1",18-07-2024 11:32:51,18-07-2024 11:33:03,11.871s,PASSED
+Start listener action : before,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:32:51,0.002s,PASSED
+Start listener action : openApplication,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:32:51,0.001s,PASSED
+Start listener action : openBrowser,Chrome 121.0.0.0,,,18-07-2024 11:32:51,18-07-2024 11:33:00,8.473s,PASSED
+"user = withRole(""Patient"").getFirst()",Chrome 121.0.0.0,Get account for login,,18-07-2024 11:33:00,18-07-2024 11:33:00,0.003s,PASSED
+WelcomePage).clickSignInButton(),Chrome 121.0.0.0,Navigate to Sign In page,,18-07-2024 11:33:00,18-07-2024 11:33:00,0.348s,PASSED
+"enterCredentials(email, pwd).clickSignInButton()",Chrome 121.0.0.0,Enter credentials,,18-07-2024 11:33:00,18-07-2024 11:33:02,1.682s,PASSED
+WelcomePage).verifySignInSuccessfully(fullName),Chrome 121.0.0.0,Verify sign in successfully,,18-07-2024 11:33:02,18-07-2024 11:33:03,0.828s,PASSED
+Start listener action : after,Chrome 121.0.0.0,,,18-07-2024 11:33:03,18-07-2024 11:33:03,0.077s,ERROR
+Start listener action : closeApplication,Chrome 121.0.0.0,,,18-07-2024 11:33:03,18-07-2024 11:33:03,0.039s,PASSED
+Start listener action : closeBrowser,Chrome 121.0.0.0,,,18-07-2024 11:33:03,18-07-2024 11:33:03,0.282s,PASSED

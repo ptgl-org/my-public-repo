@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Healthcare Smoke Test" time="31.486" tests="2" failures="0" errors="0">
+   <testsuite name="Healthcare Smoke Test" tests="2" failures="0" errors="0" time="31.486" skipped="0" timestamp="18-07-2024T18:06:08" hostname="linh.phan - localhost" id="Test Suites/Web/Healthcare Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_180604/Web/Healthcare Smoke Test/20240718_180604"/>
+         <property name="logFiles" value="/Users/linh.phan/Automation_Katalon_QE/katalon-healthcare/Reports/20240718_180604/Web/Healthcare Smoke Test/20240718_180604/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="linh.phan - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.4.0.212"/>
+         <property name="browser" value="Chrome 121.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="34666532339e815edf0a411bb82376b8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts" time="15.539" classname="Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts" status="PASSED">
+         <system-out><![CDATA[18-07-2024T18:06:08 - [TEST_CASE][PASSED] - Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts: Test Cases/Web/Doctor Management/WEB_Verify UI View the list of doctor accounts
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T18:06:09 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T18:06:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T18:06:09 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T18:06:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T18:06:16 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T18:06:16 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T18:06:16 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T18:06:16 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T18:06:16 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:17 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:18 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T18:06:18 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T18:06:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:18 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T18:06:20 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T18:06:20 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T18:06:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T18:06:20 - [TEST_STEP][PASSED] - clickFullNameColumnTitle().verifyFullNameDescIconIsVisible(): Object 'objectName' is visible
+
+18-07-2024T18:06:21 - [MESSAGE][PASSED] - Object 'Object Repository/Common/css' is visible
+
+18-07-2024T18:06:21 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T18:06:21 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T18:06:22 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T18:06:22 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+18-07-2024T18:06:23 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T18:06:24 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : after: null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T18:06:24 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account" time="15.767" classname="Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account" status="PASSED">
+         <system-out><![CDATA[18-07-2024T18:06:24 - [TEST_CASE][PASSED] - Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account: Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : before: null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (isApiTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (isWebTestCase(testCaseContext.getTestCaseId())): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : openApplication: null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - Start listener action : openBrowser: Current window maximized
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): Current window maximized
+
+18-07-2024T18:06:24 - [TEST_STEP][PASSED] - openBrowser(webUrl): Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T18:06:24 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-07-2024T18:06:24 - [MESSAGE][INFO] - User set preference: ['acceptInsecureCerts', 'true']
+
+18-07-2024T18:06:24 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-07-2024T18:06:29 - [MESSAGE][PASSED] - Browser is opened with url: 'https://hospital.aut.katalon.com/'
+
+18-07-2024T18:06:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-07-2024T18:06:30 - [MESSAGE][PASSED] - Current window maximized
+
+18-07-2024T18:06:30 - [TEST_STEP][PASSED] - user = withRole("Admin").getFirst(): null
+
+18-07-2024T18:06:30 - [TEST_STEP][PASSED] - WelcomePage).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:30 - [TEST_STEP][PASSED] - enterCredentials(email, pwd).clickSignInButton(): Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:31 - [MESSAGE][PASSED] - Keys 'admin@aut.com' sent to object: 'Object Repository/Common/id'
+
+18-07-2024T18:06:31 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Common/id'
+
+18-07-2024T18:06:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/btn' is clicked on
+
+18-07-2024T18:06:32 - [TEST_STEP][PASSED] - WelcomePage).verifySignInSuccessfully(fullName): Object 'objectName' is visible
+
+18-07-2024T18:06:33 - [MESSAGE][PASSED] - Object 'objectName' is visible
+
+18-07-2024T18:06:33 - [TEST_STEP][PASSED] - LeftNavBar).clickDoctor(): Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T18:06:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T18:06:33 - [TEST_STEP][PASSED] - row = Doctor).clickRandomMoreIcon(): Object: 'objectName' is clicked on
+
+18-07-2024T18:06:34 - [MESSAGE][PASSED] - Object: 'objectName' is clicked on
+
+18-07-2024T18:06:34 - [TEST_STEP][PASSED] - verifyCloseIconClickable().verifyConfirmClickable(): Object 'Object Repository/Common/btn' is clickable
+
+18-07-2024T18:06:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/text' is clicked on
+
+18-07-2024T18:06:36 - [MESSAGE][PASSED] - Object 'Object Repository/Common/text' is visible
+
+18-07-2024T18:06:36 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T18:06:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:38 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T18:06:38 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T18:06:38 - [MESSAGE][PASSED] - Object 'Object Repository/Common/svg' is clickable
+
+18-07-2024T18:06:38 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'objectName' are matched.
+
+18-07-2024T18:06:39 - [MESSAGE][PASSED] - Object 'objectName' is clickable
+
+18-07-2024T18:06:40 - [MESSAGE][PASSED] - Object 'Object Repository/Common/btn' is clickable
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - Start listener action : after: null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - isAPIRunning = false: null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - Start listener action : closeApplication: null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & !(isWebRunning)): null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - Start listener action : closeBrowser: Browser is closed
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - if (!(isAPIRunning) & isWebRunning): null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - if (!(checkPass(testCaseContext))): null
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - return testCaseContext.getTestCaseStatus().equalsIgnoreCase(PASSED): Browser is closed
+
+18-07-2024T18:06:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-07-2024T18:06:40 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-07-2024T18:06:08 - [TEST_SUITE][PASSED] - Healthcare Smoke Test: Test Cases/Web/Doctor Management/WEB_Verify UI View-Edit doctor account]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
